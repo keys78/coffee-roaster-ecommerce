@@ -1,13 +1,171 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.mycolor{
+  color:#83888F
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.mylinks h1{
+  font-size:14px;
+  font-weight: 600;
+  color:#83888F;
+  font-family: 'Barlow', sans-serif;
+  cursor: pointer;
+}
+
+footer{
+  background: #2C3434;
+}
+
+.socials img{
+  cursor: pointer;
+}
+
+.global-btn{
+  background: #0E8684;
+  color:#FEFCF7;
+  font-family: 'Fraunces', serif;
+  padding:20px 40px;
+  text-align: center;
+  border-radius: 11px;
+  font-size: 21px;
+}
+
+/* HOME */
+
+.hero-texts h1{
+  font-size: 70px;
+  line-height: 80px;
+  font-family: 'Fraunces', serif;
+  color:#FEFCF7;
+  font-weight: 700;
+}
+
+.hero-texts p{
+  font-size: 20px;
+  font-family: 'Barlow', sans-serif;
+  color:#FEFCF7;
+}
+
+.collections img{
+  width: 300px;
+}
+
+.collections h1{
+  color:#333D4B;
+  font-family: 'Fraunces', serif;
+  font-size: 30px;
+  padding: 12px 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+.collections p{
+  color:#333D4B;
+  font-family: 'Barlow', sans-serif;
+  font-size: 17px;
+  text-align: center;
+  padding: 0 16px;
+}
+
+.collection-head{
+  font-size: 11vw;
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(61, 61, 61));
+  -webkit-text-fill-color: transparent;
+  color: #464646;
+  display: inline-block;
+}
+
+.why-us{
+  background:#293039 ;
+}
+
+
+.why-us h1{
+  font-size: 40px;
+  font-family: 'Fraunces', serif;
+  color:#FEFCF7;
+  font-weight: 700;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+.why-us p{
+  font-size: 20px;
+  font-family: 'Barlow', sans-serif;
+  color:#FEFCF7;
+  padding-bottom: 70px;
+}
+
+.card{
+  height: 350px;
+  /* width: 100vw; */
+  max-width:400px ;
+  background: #0E8684;
+  text-align: center;
+  padding: 20px 8px 6px 8px;
+  border-radius: 10px;
+}
+
+.card h1{
+  color:#FEFCF7;
+  font-family: 'Fraunces', serif;
+  font-size: 30px;
+  padding: 12px 0;
+  font-weight: 600;
+}
+
+.card p{
+  color:#FEFCF7;
+  font-family: 'Barlow', sans-serif;
+  font-size: 16px;
+  padding: 3px 12px;
+}
+
+.circles h2{
+  height: 30px;
+  width: 30px;
+  border-radius: 99999999999px;
+  border:3px solid #0E8684;
+  background: #fff;
+  z-index: 1;
+}
+
+.circles h3{
+  border-bottom:3px solid #FDD6BA;
+}
+
+.how h1{
+  color:#83888F;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: 'Fraunces', serif;
+}
+
+.how-options h1{
+  font-size: 80px;
+  font-weight: 700;
+  padding-bottom: 12px;
+  color:#FDD6BA;
+  font-family: 'Fraunces', serif;
+}
+
+.how-options h2{
+  font-size: 32px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  color:#202930;
+  font-family: 'Fraunces', serif;
+}
+
+.how-options p{
+  font-size: 17px;
+  color:#202930;
+  font-family: 'Barlow', sans-serif;
 }
