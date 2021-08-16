@@ -12,6 +12,10 @@ body{
   background-color: #fefcf7;
 }
 
+.mylinks .active h1{
+  color:red;
+}
+
 .mylinks h1{
   font-size:14px;
   font-weight: 600;
@@ -180,4 +184,36 @@ footer{
   font-size: 17px;
   color:#202930;
   font-family: 'Barlow', sans-serif;
+}
+
+
+/************ ABOUT ************/
+.commitment h1{
+  font-size: 45px;
+  font-family: 'Fraunces', serif;
+  color:#333D4B;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.commitment p{
+  font-size: 20px;
+  font-family: 'Barlow', sans-serif;
+  color:#333D4B;
+}
+
+.about-img{
+  height: 80vh;
+}
+
+.quality h1{
+  font-size:35px;
+  font-family: 'Fraunces', serif;
+   color:#FEFCF7;
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+.quality p{
+  font-size: 19px;
+  font-family: 'Barlow', sans-serif;
+   color:#FEFCF7;
 }

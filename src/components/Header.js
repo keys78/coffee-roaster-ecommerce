@@ -1,4 +1,4 @@
-// import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
     return (
@@ -8,9 +8,9 @@ const Header = () => {
                     <img src='./assets/svgs/logo.svg' alt="coffee logo" />
                 </div>
                 <div className="mylinks flex gap-6">
-                    <h1>HOME</h1>
-                    <h1>ABOUT US</h1>
-                    <h1>CREATE YOUR PLAN</h1>
+                    <NavLink to="/" exact={true}><h1>HOME</h1></NavLink>
+                    <NavLink to="/about"><h1>ABOUT US</h1></NavLink>
+                    <NavLink to="/create-your-plan"><h1>CREATE YOUR PLAN</h1></NavLink>
                 </div>
             </div>
         </header>
