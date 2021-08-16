@@ -8,6 +8,10 @@
   color:#83888F
 }
 
+body{
+  background-color: #fefcf7;
+}
+
 .mylinks h1{
   font-size:14px;
   font-weight: 600;
@@ -32,6 +36,13 @@ footer{
   text-align: center;
   border-radius: 11px;
   font-size: 21px;
+  font-weight: 600;
+  transition: background linear 0.3s;
+}
+
+.global-btn:hover{
+  background: #1bcecb;
+  transition: background linear 0.3s;
 }
 
 /* HOME */
@@ -104,13 +115,14 @@ footer{
 }
 
 .card{
-  height: 350px;
+  height: 370px;
   /* width: 100vw; */
   max-width:400px ;
   background: #0E8684;
   text-align: center;
   padding: 20px 8px 6px 8px;
   border-radius: 10px;
+  margin-bottom: -190px;
 }
 
 .card h1{

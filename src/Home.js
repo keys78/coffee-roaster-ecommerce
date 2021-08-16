@@ -9,10 +9,10 @@ const Home = () => {
             <Header />
 
             <section>
-                <div className="w-10/12 mx-auto realtive">
+                <div className="w-10/12 mx-auto relative">
                     <img className="rounded-2xl" src="./assets/home/desktop/image-hero-coffeepress.jpg" alt="hero" />
                     <div className="absolute top-0 left-0 w-full">
-                        <div className="w-9/12 mx-auto mt-52">
+                        <div className="w-10/12 mx-auto mt-20">
                             <div className="w-6/12 hero-texts">
                                 <h1>Great coffee made simple.</h1>
                                 <p className="pt-6 pb-16">Start your mornings with the world’s best coffees.
@@ -104,7 +104,7 @@ const Home = () => {
             </section>
 
             <section>
-                <div className="how w-10/12 mx-auto my-20">
+                <div className="how w-10/12 mx-auto mb-60 mt-96">
                     <h1>How it works</h1>
 
                     <div className="relative my-12 circles w-9/12 flex justify-between items-center">
@@ -134,10 +134,14 @@ const Home = () => {
                         <div className="how-options">
                             <h1>03</h1>
                             <h2>Recieve and enjoy!</h2>
-                            <p>We ship your package within 48 hours, freshly roasted. 
-                               Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.
+                            <p>We ship your package within 48 hours, freshly roasted.
+                                Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.
                             </p>
                         </div>
+                    </div>
+
+                    <div className="my-32">
+                        <Button text={'Create your plan'} />
                     </div>
 
                 </div>

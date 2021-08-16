@@ -1,19 +1,17 @@
 import PropTypes from 'prop-types'
+import { motion } from "framer-motion";
 
 const Button = ({ color, text }) => {
 
-    return <button style={{ backgroundColor: color }} className="global-btn">
-     {text}
-    </button>
-}
-
-Button.defaultProps = {
-    // color: '#1B1D23'
+    return <motion.button
+        whileHover={{ scale: 0.95 }} transiton={{ type: 'spring', stifness: 300 }}
+        style={{ backgroundColor: color }} className="global-btn">
+        {text}
+    </motion.button>
 }
 
 Button.propTypes = {
     text: PropTypes.string,
     color: PropTypes.string,
-    // onClick: PropTypes.func,
 }
 export default Button;

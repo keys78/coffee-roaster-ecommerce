@@ -7,7 +7,7 @@ const Header = () => {
                 <div>
                     <img src='./assets/svgs/logo.svg' alt="coffee logo" />
                 </div>
-                <div className="mylinks flex gap-4">
+                <div className="mylinks flex gap-6">
                     <h1>HOME</h1>
                     <h1>ABOUT US</h1>
                     <h1>CREATE YOUR PLAN</h1>
