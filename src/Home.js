@@ -115,10 +115,10 @@ const Home = () => {
                     </div>
 
                     <div className="flex justify-between items items-start">
-                        <div className="how-options">
+                        <div className="how-options ">
                             <h1>01</h1>
                             <h2>Pick your coffee</h2>
-                            <p>Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them.
+                            <p className="pr-16">Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them.
                                 There are new coffees in all profiles every month for you to try out.
                             </p>
                         </div>
@@ -126,7 +126,7 @@ const Home = () => {
                         <div className="how-options">
                             <h1>02</h1>
                             <h2>Choose the frequency</h2>
-                            <p>Customize your order frequency, quantity, even your roast style and grind type.
+                            <p className="pr-16">Customize your order frequency, quantity, even your roast style and grind type.
                                 Pause, skip or cancel your subscription with no commitment through our online portal.
                             </p>
                         </div>

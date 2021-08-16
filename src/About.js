@@ -1,4 +1,3 @@
-import Button from "./components/Button"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
 
@@ -47,17 +46,22 @@ const About = () => {
             </section>
 
             <section>
-                <div className="w-10/12 mx-auto relative">
+                <div className="w-10/12 mx-auto relative  mb-52 mt-80">
                     <img className="rounded-2xl" src="./assets/about/desktop/bg-quality.png" alt="hero" />
                     <div className="absolute top-0 left-0 w-full">
                         <div className="w-10/12 mx-auto mt-32">
-                            <div className="w-6/12 quality">
-                                <h1>Uncompromising quality</h1>
-                                <p className="pt-6 pb-16">Although we work with growers who pay close attention to all stages
-                                    of harvest and processing, we employ, on our end, a rigorous quality control program to avoid
-                                    over-roasting or baking the coffee dry. Every bag of coffee is tagged with a roast date and batch
-                                    number. Our goal is to roast consistent,user-friendly coffee, so that brewing is easy and enjoyable.
-                                </p>
+                            <div className="flex justify-between items-start">
+                                <div className="w-6/12 quality">
+                                    <h1>Uncompromising quality</h1>
+                                    <p className="pt-6 pb-16">Although we work with growers who pay close attention to all stages
+                                        of harvest and processing, we employ, on our end, a rigorous quality control program to avoid
+                                        over-roasting or baking the coffee dry. Every bag of coffee is tagged with a roast date and batch
+                                        number. Our goal is to roast consistent,user-friendly coffee, so that brewing is easy and enjoyable.
+                                    </p>
+                                </div>
+                                <div className="w-5/12 px-5 -mt-72">
+                                    <img className="rounded-2xl" src="./assets/about/desktop/image-quality.jpg" alt="image-quality" />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -66,63 +70,43 @@ const About = () => {
 
 
 
-            {/* <section>
-                <div className="how w-10/12 mx-auto mb-60 mt-96">
-                    <h1>How it works</h1>
+            <section>
+                <div className="how w-10/12 mx-auto mb-40">
+                    <h1>Our headquaters</h1>
 
-                    <div className="relative my-12 circles w-9/12 flex justify-between items-center">
-                        <h2></h2>
-                        <h2></h2>
-                        <h2></h2>
-                        <h3 className="w-full absolute top-3 left-0"></h3>
-                    </div>
+                    <div className="w-10/12">
+                        <div className="flex justify-between items items-start">
+                            <div className="how-options">
+                                <img className="mx-auto" src="./assets/about/desktop/illustration-uk.svg" alt="uk image" />
+                                <h2>United Kingdom</h2>
+                                <h3>68 Asfordby Rd</h3>
+                                <h3>Alcaston</h3>
+                                <h3>SY6 1YA</h3>
+                                <h3>+44 1241 918425</h3>
+                            </div>
 
-                    <div className="flex justify-between items items-start">
-                        <div className="how-options">
-                            <h1>01</h1>
-                            <h2>Pick your coffee</h2>
-                            <p>Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them.
-                                There are new coffees in all profiles every month for you to try out.
-                            </p>
-                        </div>
+                            <div className="how-options">
+                                <img className="mx-auto" src="./assets/about/desktop/illustration-canada.svg" alt="canada-image" />
+                                <h2>Canada</h2>
+                                <h3>1528 Eglinton Avenue</h3>
+                                <h3>Toronto</h3>
+                                <h3>Ontario M4P1A6</h3>
+                                <h3>+1 416 485 2997</h3>
+                            </div>
 
-                        <div className="how-options">
-                            <h1>02</h1>
-                            <h2>Choose the frequency</h2>
-                            <p>Customize your order frequency, quantity, even your roast style and grind type.
-                                Pause, skip or cancel your subscription with no commitment through our online portal.
-                            </p>
-                        </div>
-
-                        <div className="how-options">
-                            <h1>03</h1>
-                            <h2>Recieve and enjoy!</h2>
-                            <p>We ship your package within 48 hours, freshly roasted.
-                                Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.
-                            </p>
+                            <div className="how-options">
+                                <img className="mx-auto" src="./assets/about/desktop/illustration-australia.svg" alt="canada-image" />
+                                <h2>Australia</h2>
+                                <h3>36 Swanston Street</h3>
+                                <h3>Kewell</h3>
+                                <h3>Victoria</h3>
+                                <h3>+61 4 9928 3629</h3>
+                            </div>
                         </div>
                     </div>
-
-                    <div className="my-32">
-                        <Button text={'Create your plan'} />
-                    </div>
-
                 </div>
 
-
-
-            </section> */}
-
-
-
-
-
-
-
-
-
-
-
+            </section>
 
             <Footer />
         </div>

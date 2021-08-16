@@ -10,7 +10,7 @@ const Header = () => {
                 <div className="mylinks flex gap-6">
                     <NavLink to="/" exact={true}><h1>HOME</h1></NavLink>
                     <NavLink to="/about"><h1>ABOUT US</h1></NavLink>
-                    <NavLink to="/create-your-plan"><h1>CREATE YOUR PLAN</h1></NavLink>
+                    <NavLink to="/createyourplan"><h1>CREATE YOUR PLAN</h1></NavLink>
                 </div>
             </div>
         </header>
