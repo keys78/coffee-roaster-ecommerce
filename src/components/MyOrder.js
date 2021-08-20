@@ -1,13 +1,21 @@
 import OrderCard from "./OrderCard"
 
 
-const MyOrder = () => {
+const MyOrder = ({ heado }) => {
     return ( 
         <div>
             <OrderCard 
-            head_text={'Capsule'} 
-            text={'lormem ipsum ttej rfwcs fshujbkv schkusf'}
+            head_text={'Keraton'} 
+            text={'lormem ipsum ttej rfwcs '}
             />
+            <OrderCard 
+            head_text={'brilla'} 
+            text={'lormem ipsum ttej rfwcs '}
+            />
+
+            <div className="summary">
+                { heado }
+            </div>
         </div>
      );
 }

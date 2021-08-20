@@ -8,6 +8,11 @@
   color:#83888F
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body{
   background-color: #fefcf7;
 }
@@ -277,4 +282,37 @@ footer{
   font-size: 17px;
   color:#FEFCF7;
   font-family: 'Barlow', sans-serif;
+}
+
+/* ORDER CARD */
+.order-card {
+  text-align: center;
+  padding: 12px;
+  background: #f4f1eb;
+  width: 30%;
+}
+
+.order-card:hover {
+  cursor: pointer;
+  background:rgb(241, 216, 184);
+}
+
+.order-card h1{
+  font-size:33px;
+  font-family: 'Fraunces', serif;
+  color:#333D4B;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.order-card p{
+  font-size: 19px;
+  font-family: 'Barlow', sans-serif;
+  color:#333D4B;
+}
+
+.summary {
+  background: #000;
+  color: #fff;
+  width: 100%;
+  height: 20vh;
 }
