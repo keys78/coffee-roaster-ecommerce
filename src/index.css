@@ -16,6 +16,23 @@ html {
 body{
   background-color: #fefcf7;
 }
+.home-hero{
+  height: 80vh;
+}
+
+/* SIDEBAR */
+.sidebar div{
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgb(254, 252, 246) 200px,rgba(254, 252, 246, 0.5));
+  padding:1.7rem 0;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
 
 .mylinks .active h1{
   color:rgb(87, 201, 182);
@@ -124,9 +141,9 @@ footer{
 }
 
 .card{
-  height: 370px;
+  /* height: 370px; */
   /* width: 100vw; */
-  max-width:400px ;
+  max-width:450px ;
   background: #0E8684;
   text-align: center;
   padding: 20px 8px 6px 8px;
@@ -315,4 +332,92 @@ footer{
   color: #fff;
   width: 100%;
   height: 20vh;
+}
+
+
+/* SCALERS  */
+@media screen and (max-width: 1280px) {
+  .hero-texts{
+    text-align: center;
+  }
+  .hero-texts h1{
+    font-size:40px;
+    line-height: 40px;
+    font-weight: 400;
+    text-align: center;
+    
+  }
+  
+  .hero-texts p{
+    font-size: 16px;
+    text-align: center;
+  }
+  .collections h1{
+    font-size: 24px;
+    text-align: left;
+  }
+  
+  .collections p{
+    font-size: 15px;
+    text-align: left;
+    padding: 0 0px;
+  }
+  .collections img{
+    width: 250px;
+  }
+  .card{
+    /* height: 370px; */
+    /* width: 100vw; */
+    max-width:100% ;
+    /* background: #0E8684;
+    text-align: center;
+    padding: 20px 8px 6px 8px;
+    /* border-radius: 10px;* */
+    margin-bottom: 0px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .el-b{
+    text-align: center;
+  }
+  .how-options h1{
+    font-size: 60px;
+    font-weight: 600;
+    padding-bottom: 0;
+  }
+  
+  .how-options h2{
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 10px;
+  }
+  
+  .how-options p{
+    font-size: 15px;
+    margin-bottom: 2rem;
+  }
+  
+}
+
+
+@media screen and (max-width: 648px) {
+  .collections h1{
+    text-align: center;
+  }
+  
+  .collections p{
+    text-align: center;
+    padding: 0 0px;
+  }
+  .collections img{
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .home-hero{
+    height: 69vh;
+  }
 }
