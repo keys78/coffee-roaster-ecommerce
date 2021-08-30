@@ -253,6 +253,14 @@ footer{
   margin: 75px 0;
 }
 
+.quality{
+  height: 70vh;
+}
+
+.coffee-tea{
+  width: 500px;
+}
+
 /************************ PLAN ****************/
 .plan-img{
   height: 65vh;
@@ -376,12 +384,24 @@ footer{
     margin-bottom: 0px;
   }
 }
+@media screen and (max-width: 1024px) {
+  .commitment h1{
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+  .commitment p{
+    font-size: 16px;
+  }
+
+}
 
 
 @media screen and (max-width: 768px) {
   .el-b{
     text-align: center;
   }
+
   .how-options h1{
     font-size: 60px;
     font-weight: 600;
@@ -398,13 +418,64 @@ footer{
     font-size: 15px;
     margin-bottom: 2rem;
   }
+
+  .why-us h1{
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 70px;
+  }
   
+  .why-us p{
+    font-size: 15px;
+  }
+  .commitment{
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .quality h1{
+    font-size:28px;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+  .quality p{
+    font-size: 15px;
+  }
+  .quality{
+    text-align: center;
+  }
+  .how{
+    text-align: center;
+  }
+  .how-options img{
+    width: 17vw;
+    height: 17vh;
+    margin: 75px auto;
+  }
+  .how h1{
+    font-size: 32px;
+    font-weight: 500;
+  }
+  
+  .how-options{
+    text-align: center;
+    width: 100%;
+    align-items: center;
+  }
+  .how-options h3{
+    font-size: 16px;
+    line-height: 35px;
+  }
 }
 
 
 @media screen and (max-width: 648px) {
   .collections h1{
     text-align: center;
+  }
+
+  .about-img{
+    height: 60vh;
   }
   
   .collections p{
@@ -414,10 +485,22 @@ footer{
   .collections img{
     margin: 0 auto;
   }
+  .collection-head{
+    text-align: center;
+    border:1px solid rgb(24, 214, 87);
+    margin:0 auto;
+  }
+  .how-options h2{
+    padding-bottom: -10px;
+  }
 }
 
 @media screen and (max-width: 540px) {
   .home-hero{
     height: 69vh;
+  }
+  .how-options img{
+    width: 25vw;
+    height: 15vh;
   }
 }

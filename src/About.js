@@ -8,11 +8,16 @@ const About = () => {
             <Header />
 
             <section>
-                <div className="w-10/12 mx-auto relative">
-                    <img className="rounded-2xl about-img" src="./assets/about/desktop/image-hero-whitecup.jpg" alt="hero" />
+                <div className="md:w-10/12 w-11/12 mx-auto relative">
+                    <picture>
+                        <source media="(min-width:1024px)" className="rounded-2xl about-img" srcset="./assets/about/desktop/image-hero-whitecup.jpg" />
+                        <source media="(min-width:440px)" className="rounded-2xl about-img" srcset="./assets/about/tablet/image-hero-whitecup.jpg" />
+                        <img className="rounded-2xl about-img" src="./assets/about/mobile/image-hero-whitecup.jpg" alt="hero" />
+                    </picture>
+                    
                     <div className="absolute top-0 left-0 w-full">
-                        <div className="w-10/12 mx-auto mt-32">
-                            <div className="w-6/12 hero-texts">
+                        <div className="md:w-10/12 w-11/12 mx-auto mt-32">
+                            <div className="xl:w-6/12 lg:w-9/12 w-full hero-texts">
                                 <h1>About us</h1>
                                 <p className="pt-6 pb-16">Coffeeroasters began its journey of exotic discovery in 1999,
                                     highlighting stories of coffee from around the world. We have since been dedicated to
@@ -25,9 +30,9 @@ const About = () => {
             </section>
 
             <section>
-                <div className="w-9/12 mx-auto flex gap-12 items-center my-52">
+                <div className="lg:w-9/12 md:w-10/12 w-11/12 mx-auto flex md:flex-row flex-col gap-12 items-center md:my-52 my-20">
                     <div>
-                        <img className="rounded-2xl max-w-md" src="./assets/about/desktop/image-commitment.jpg" alt="image fot commitment" />
+                        <img className="rounded-2xl lg:max-w-md md:max-w-xs max-w-full" src="./assets/about/desktop/image-commitment.jpg" alt="image fot commitment" />
                     </div>
                     <div className="commitment">
                         <h1>Our commitment</h1>
@@ -46,12 +51,12 @@ const About = () => {
             </section>
 
             <section>
-                <div className="w-10/12 mx-auto relative  mb-52 mt-80">
-                    <img className="rounded-2xl" src="./assets/about/desktop/bg-quality.png" alt="hero" />
+                <div className="md:w-10/12 w-11/12 mx-auto relative  md:mb-52 mb-28 mt-80">
+                    <img className="rounded-2xl quality" src="./assets/about/desktop/bg-quality.png" alt="hero" />
                     <div className="absolute top-0 left-0 w-full">
-                        <div className="w-10/12 mx-auto mt-32">
-                            <div className="flex justify-between items-start">
-                                <div className="w-6/12 quality">
+                        <div className="md:w-10/12 w-11/12 mx-auto mt-32">
+                            <div className="flex xl:flex-row flex-col-reverse justify-between items-start">
+                                <div className="xl:w-5/12 w-full quality">
                                     <h1>Uncompromising quality</h1>
                                     <p className="pt-6 pb-16">Although we work with growers who pay close attention to all stages
                                         of harvest and processing, we employ, on our end, a rigorous quality control program to avoid
@@ -59,8 +64,8 @@ const About = () => {
                                         number. Our goal is to roast consistent,user-friendly coffee, so that brewing is easy and enjoyable.
                                     </p>
                                 </div>
-                                <div className="w-5/12 px-5 -mt-72">
-                                    <img className="rounded-2xl" src="./assets/about/desktop/image-quality.jpg" alt="image-quality" />
+                                <div className="xl:w-5/12 w-full md:px-5 px-0 -mt-72">
+                                    <img className="rounded-2xl h-96 coffee-tea" src="./assets/about/desktop/image-quality.jpg" alt="image-quality" />
                                 </div>
                             </div>
                         </div>
@@ -71,11 +76,11 @@ const About = () => {
 
 
             <section>
-                <div className="how w-10/12 mx-auto mb-40">
+                <div className="how md:w-10/12 w-11/12 mx-auto mb-40">
                     <h1>Our headquaters</h1>
 
-                    <div className="w-10/12">
-                        <div className="flex justify-between items items-start">
+                    <div className="md:w-10/12 w-11/12">
+                        <div className="flex justify-between md:flex-row flex-col items items-start">
                             <div className="how-options">
                                 <img className="mx-auto" src="./assets/about/desktop/illustration-uk.svg" alt="uk image" />
                                 <h2>United Kingdom</h2>

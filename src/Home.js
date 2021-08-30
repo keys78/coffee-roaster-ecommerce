@@ -31,7 +31,7 @@ const Home = () => {
             </section>
 
             <section>
-                <div className="md:w-10/12 w-11/12 pl-8 mx-auto lg:my-52 my-40">
+                <div className="md:w-10/12 w-11/12 lg:pl-8 pl-0 mx-auto lg:my-52 my-20">
                     <h1 className="collection-head lg:ml-8 ml-0">our collection</h1>
                     <div className="collections flex lg:flex-row flex-col lg:-mt-36 -mt-0">
                         <div className="lg:block flex sm:flex-row flex-col sm:0 mt-12">
@@ -73,7 +73,7 @@ const Home = () => {
             <section>
                 <div>
                     <div className="why-us md:w-10/12 w-11/12 mx-auto rounded-2xl">
-                        <div className="xl:w-4/12 lg:w-6/12 w-10/12 mx-auto text-center">
+                        <div className="xl:w-4/12 lg:w-6/12 w-11/12 mx-auto text-center">
                             <h1>Why choose us?</h1>
                             <p>A large part of our role is choosing which particular coffees will be featured in our range.
                                 This means working closely with the best coffee growers to give you a more impactful experience
@@ -116,8 +116,8 @@ const Home = () => {
             </section>
 
             <section>
-                <div className="how md:w-10/12 w-11/12 mx-auto mb-60 mt-96">
-                    <h1>How it works</h1>
+                <div className="how md:w-10/12 w-11/12 mx-auto sm:mb-60 mb-28 sm:mt-96 mt-24">
+                    <h1 className="md:text-left text-center md:mb-0 mb-12">How it works</h1>
 
                     <div className="md:flex hidden relative my-12 circles w-9/12 flex justify-between items-center">
                         <h2></h2>
@@ -152,7 +152,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div className="md:my-32 my-16 el-b">
+                    <div className="md:my-32 my-0 el-b">
                         <Button text={'Create your plan'} />
                     </div>
 
