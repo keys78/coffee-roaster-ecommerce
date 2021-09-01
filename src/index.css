@@ -310,27 +310,88 @@ footer{
 }
 
 /* ORDER CARD */
+.order-container{
+  display: grid;
+  grid-template-columns: 0.7fr 2.3fr;
+}
+.card-options div{
+  padding:20px 0;
+  border-bottom: 1px solid #4755682a;
+  cursor: pointer;
+}
+.card-options div .title{
+  font-size:26px;
+  font-family: 'Fraunces', serif;
+  color:#475568;
+  font-weight: 700;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.card-options div .number{
+  font-size:26px;
+  font-family: 'Fraunces', serif;
+  color:#475568;
+  font-weight: 700;
+  margin-right: 10px;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.card-options div:hover .number{
+  color:#0E8684;
+  opacity: 1;
+  transition: 0.3s;
+}
+.card-options div:hover .title{
+ opacity: 1;
+ transition: 0.3s;
+}
+
+.card-container{
+  padding:0 4rem
+}
+
+.card-container h1{
+  font-size:35px;
+  font-family: 'Fraunces', serif;
+  color:#848990;
+  font-weight: 700;
+}
+
+.card-holder{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  margin-bottom: 3rem;
+}
 .order-card {
-  text-align: center;
-  padding: 12px;
+  padding:2rem 1rem 4rem 1rem;
   background: #f4f1eb;
-  width: 30%;
+  width: 100%;
+  transition: 0.3s;
+  border-radius: 10px;
 }
 
 .order-card:hover {
   cursor: pointer;
   background:rgb(241, 216, 184);
+  transition: 0.3s;
 }
 
-.order-card h1{
-  font-size:33px;
+.order-card:focus{
+  background-color:#0E8684;
+}
+
+.order-card h2{
+  font-size:24px;
   font-family: 'Fraunces', serif;
   color:#333D4B;
   font-weight: 700;
   margin-bottom: 5px;
 }
 .order-card p{
-  font-size: 19px;
+  font-size: 16px;
   font-family: 'Barlow', sans-serif;
   color:#333D4B;
 }
@@ -340,6 +401,11 @@ footer{
   color: #fff;
   width: 100%;
   height: 20vh;
+}
+
+.newBg{
+  background: red;
+  padding:5rem;
 }
 
 
@@ -384,6 +450,31 @@ footer{
     margin-bottom: 0px;
   }
 }
+
+.yes{
+  transform:rotate(180deg);
+  transition: all .5s linear;
+  cursor: pointer;
+}
+
+.no{
+  transform:rotate(0deg);
+  transition: all .5s linear;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1024px) {
   .commitment h1{
     font-size: 35px;

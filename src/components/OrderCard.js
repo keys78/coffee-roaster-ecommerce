@@ -1,24 +1,25 @@
 import PropTypes from 'prop-types'
 import { useState } from 'react'
-// import MyOrder from './MyOrder'
+// import { preferences } from './data'
 
-const OrderCard = ({ color, head_text, text }) => {
+
+const OrderCard = ({ color}) => {
     const [card, setCard] = useState('')
 
-    const handleClick = () => {
-        setCard(head_text)
+    const handleClick = value => {
+        setCard(value)
     }
 
 
-    return <div
-        onClick={() => handleClick()}
-        style={{ backgroundColor: color }} className="order-card">
-        <h1>{head_text}</h1>
-        <p>{text}</p>
+    return (
+        <div
+            onClick={() => handleClick('yes')}
+            style={{ backgroundColor: color }} className="order-card">
+            <h1>{preferences.name}</h1>
+            <p>{preferences.desc}</p>
 
-        {/* <MyOrder heado={card}/> */}
-    </div>
-    
+        </div>
+    );
 }
 
 OrderCard.propTypes = {
