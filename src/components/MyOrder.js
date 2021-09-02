@@ -39,6 +39,10 @@ const MyOrder = () => {
         setRotate(true)
     }
 
+    const createOrder = () => {
+        console.log('Hello')
+    }
+
     return (
         <section>
             <div className="order-container">
@@ -71,7 +75,6 @@ const MyOrder = () => {
                                         <h2>{preference.name}</h2>
                                         <p>{preference.desc}</p>
                                     </motion.div>
-
                                 )
                             ))}
                         </div>}
@@ -168,7 +171,6 @@ const MyOrder = () => {
                                         <h2>{deliveries.name}</h2>
                                         <p>{deliveries.desc}</p>
                                     </motion.div>
-
                                 )
                             ))}
                         </div>}
@@ -180,13 +182,13 @@ const MyOrder = () => {
                     <div className="summary mt-20">
                         <h1>ORDER SUMMARY</h1>
                         <h2>
-                            “I drink my coffee as <span>{preference}</span>, with a <span>{beanType}</span> type of bean. 
-                             <span>{quantity}</span> ground ala <span>{grind_option}</span>, sent to me <span>{deliveries}</span>.”
+                            “I drink my coffee as <span>{preference}</span>, with a <span>{beanType}</span> type of bean.
+                            <span>{quantity}</span> ground ala <span>{grind_option}</span>, sent to me <span>{deliveries}</span>.”
                         </h2>
                     </div>
 
                     <div className="lg:text-right text-center mt-10">
-                        <Button onClick={() => alert('Order Created')} text={'Create my plan'} />
+                        <Button onClick={createOrder} text={'Create my plan'} />
                     </div>
                 </div>
 
