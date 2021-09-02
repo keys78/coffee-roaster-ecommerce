@@ -34,7 +34,7 @@ const CreateYourPlan = () => {
 
 
             <section>
-                <div className="md:w-10/12 w-11/12 mx-auto relative  mb-52 md:mt-40 mt-20">
+                <div className="md:w-10/12 w-11/12 mx-auto relative  md:mb-52 mb-0 md:mt-40 mt-20">
                     <img className="rounded-2xl plan-quality" src="./assets/about/desktop/bg-quality.png" alt="plan-quality" />
                     <div className="absolute top-0 left-0 w-full">
                         <div className="md:w-10/12 w-11/12 mx-auto md:mt-24 mt-12">
@@ -75,13 +75,8 @@ const CreateYourPlan = () => {
                 </div>
             </section>
 
-            <div className="my-80 w-10/12 mx-auto">
-
-
+            <div className="my-28 md:w-10/12 w-11/12 mx-auto">
                 <MyOrder />
-
-
-
             </div>
 
 

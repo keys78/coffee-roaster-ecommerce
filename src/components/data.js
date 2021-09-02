@@ -55,12 +55,12 @@ export const data = [
     },
     {
         category:'grind-option',
-        name:'Wholebean',
+        name:'Filter',
         desc:'Best choice if you cherish the full sensory experience'
 
     },
     {
-        category:'Filter',
+        category:'grind-option',
         name:'Wholebean',
         desc:'For drip or pour-over coffee methods such as V60 or Aeropress'
 
