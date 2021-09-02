@@ -2,32 +2,34 @@ import { data, labels, questions } from "./data";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Button from "./Button";
+import SummaryModal from "./SummaryModal";
 
 const MyOrder = () => {
-    const [preference, SetPreference] = useState('______')
-    const [beanType, SetBeanType] = useState('______')
-    const [quantity, SetQuantity] = useState('______')
-    const [grind_option, SetGrindOption] = useState('______')
-    const [deliveries, SetDeliveries] = useState('______')
+    const [preference, setPreference] = useState('______')
+    const [beanType, setBeanType] = useState('______')
+    const [quantity, setQuantity] = useState('______')
+    const [grind_option, setGrindOption] = useState('______')
+    const [deliveries, setDeliveries] = useState('______')
 
     const [isOpen, setIsOpen] = useState(false)
     const [rotate, setRotate] = useState(false)
+    const [openModal, setOpenModal] =useState()
     // const [activeCard, SetActiveCard] = useState(null)
 
     const handleClick = value => {
-        SetPreference(value)
+        setPreference(value)
     }
     const handleClickType = value => {
-        SetBeanType(value)
+        setBeanType(value)
     }
     const handleClickQuantity = value => {
-        SetQuantity(value)
+        setQuantity(value)
     }
     const handleClickGrind = value => {
-        SetGrindOption(value)
+        setGrindOption(value)
     }
     const handleClickDeliver = value => {
-        SetDeliveries(value)
+        setDeliveries(value)
     }
 
     const toggleChevron = () => {
@@ -40,7 +42,7 @@ const MyOrder = () => {
     }
 
     const createOrder = () => {
-        console.log('Hello')
+        setOpenModal(!openModal)
     }
 
     return (
@@ -188,11 +190,18 @@ const MyOrder = () => {
                     </div>
 
                     <div className="lg:text-right text-center mt-10">
-                        <Button onClick={createOrder} text={'Create my plan'} />
+                        {/* <Button onClick={createOrder} text={'Create my plan'} /> */}
+                        <button onClick={createOrder}>Create Order</button>
                     </div>
+
+                    
                 </div>
 
             </div>
+            {openModal && <SummaryModal preference={preference} beanType={beanType}
+            quantity={quantity} grind_option={grind_option} deliveries={deliveries} openModal={openModal}
+            setOpenModal={setOpenModal}
+            />}
         </section>
 
 
