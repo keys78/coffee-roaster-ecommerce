@@ -38,6 +38,7 @@ export const data = [
     {
         category:'quantity',
         name:'250g',
+        price:7.20,
         desc:'Perfect for the solo drinker. Yields about 12 delicious cups.'
 
     },

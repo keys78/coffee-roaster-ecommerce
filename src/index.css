@@ -377,6 +377,13 @@ footer{
   grid-gap: 1rem;
   margin-bottom: 3rem;
 }
+
+/* ACTIVE BACKGROUND */
+.active-bg{
+  background: red;
+  color:red;
+}
+
 .order-card {
   padding:2rem 1rem 4rem 1rem;
   background: #f4f1eb;
@@ -528,6 +535,22 @@ footer{
   color:#0E8684;
 }
 
+.order-btn{
+  background: #0E8684;
+  color:#FEFCF7;
+  font-family: 'Fraunces', serif;
+  padding:15px 18px;
+  text-align: center;
+  border-radius: 11px;
+  font-size: 21px;
+  font-weight: 600;
+  transition: background linear 0.3s;
+}
+
+.order-btn:hover{
+  background: #1bcecb;
+  transition: background linear 0.3s;
+}
 
 
 
@@ -695,5 +718,10 @@ footer{
   }
   .order-card {
     padding:1rem 1rem 2rem 1rem;
+  }
+  .modal-header{
+    font-size:26px;
+    font-weight: 600; 
+    padding:2.5rem 1rem;
   }
 }

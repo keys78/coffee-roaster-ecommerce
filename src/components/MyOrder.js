@@ -1,7 +1,6 @@
 import { data, labels, questions } from "./data";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Button from "./Button";
 import SummaryModal from "./SummaryModal";
 
 const MyOrder = () => {
@@ -11,13 +10,17 @@ const MyOrder = () => {
     const [grind_option, setGrindOption] = useState('______')
     const [deliveries, setDeliveries] = useState('______')
 
+    const [price, setPrice] = useState(0)
+
     const [isOpen, setIsOpen] = useState(false)
     const [rotate, setRotate] = useState(false)
-    const [openModal, setOpenModal] =useState()
-    // const [activeCard, SetActiveCard] = useState(null)
+    const [openModal, setOpenModal] = useState()
+    const [activeCard, SetActiveCard] = useState(false)
 
     const handleClick = value => {
         setPreference(value)
+        SetActiveCard(!activeCard)
+        setPrice(value)
     }
     const handleClickType = value => {
         setBeanType(value)
@@ -121,8 +124,9 @@ const MyOrder = () => {
                                         exit={{ y: 300, opacity: 0 }}
                                         whileHover={{ scale: 0.97 }}
                                         transiton={{ type: 'spring', duration: 0.2 }}
-                                        key={quantity.name} className="order-card" onClick={() => handleClickQuantity(quantity.name)}>
+                                        key={quantity.name} className="order-card" onClick={() => handleClickQuantity(quantity.price)}>
                                         <h2>{quantity.name}</h2>
+                                        <p>{ quantity.price }</p>
                                         <p>{quantity.desc}</p>
                                     </motion.div>
 
@@ -190,17 +194,16 @@ const MyOrder = () => {
                     </div>
 
                     <div className="lg:text-right text-center mt-10">
-                        {/* <Button onClick={createOrder} text={'Create my plan'} /> */}
-                        <button onClick={createOrder}>Create Order</button>
+                        <button className="order-btn" onClick={createOrder}>Create my plan</button>
                     </div>
 
-                    
+
                 </div>
 
             </div>
-            {openModal && <SummaryModal preference={preference} beanType={beanType}
-            quantity={quantity} grind_option={grind_option} deliveries={deliveries} openModal={openModal}
-            setOpenModal={setOpenModal}
+            {openModal && <SummaryModal price={price} preference={preference} beanType={beanType}
+                quantity={quantity} grind_option={grind_option} deliveries={deliveries} openModal={openModal}
+                setOpenModal={setOpenModal}
             />}
         </section>
 
