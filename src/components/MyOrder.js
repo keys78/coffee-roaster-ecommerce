@@ -20,13 +20,14 @@ const MyOrder = () => {
     const handleClick = value => {
         setPreference(value)
         SetActiveCard(!activeCard)
-        setPrice(value)
+        
     }
     const handleClickType = value => {
         setBeanType(value)
     }
     const handleClickQuantity = value => {
         setQuantity(value)
+        setPrice(value)
     }
     const handleClickGrind = value => {
         setGrindOption(value)
