@@ -30,7 +30,7 @@ const SummaryModal = ({ price, preference, beanType, quantity, grind_option, del
 
                             <button className="order-btn flex gap-3 ml-3"onClick={closeModal}>
                                 <p>Checkout</p>
-                                <p className="sm:hidden block">{ price }/per mo</p>
+                                <p className="sm:hidden block">{ price }/pe mo</p>
                             </button>
                         </div>
                     </div>
