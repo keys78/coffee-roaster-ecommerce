@@ -26,11 +26,11 @@ const SummaryModal = ({ price, preference, beanType, quantity, grind_option, del
                             Subscription discount codes can also be redeemed at the checkout.
                         </h2>
                         <div className="flex justify-between items-center">
-                            <h1 className="modal sm:block hidden">{price}/per mo</h1>
+                            <h1 className="modal sm:block hidden">${price}/per mo</h1>
 
                             <button className="order-btn flex gap-3 ml-3"onClick={closeModal}>
                                 <p>Checkout</p>
-                                <p className="sm:hidden block">{ price }/pe mo</p>
+                                <p className="sm:hidden block">${ price }/per mo</p>
                             </button>
                         </div>
                     </div>

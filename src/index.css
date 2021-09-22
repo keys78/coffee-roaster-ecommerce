@@ -1,8 +1,63 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.faq__question:hover {
+	color: orange;
+}
+
+.faq__arrow {
+	transition: .4s transform;
+}
+
+.faq__answer {
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+	display: none;
+	margin-top: 1.5rem;
+	color: gray;
+}
+
+.faq__item.active .faq__question {
+	font-weight: 700;
+	color: blue;
+}
+
+.faq__item.active .faq__arrow {
+	transform: rotate(180deg);
+}
+
+.faq__item.active .faq__answer {
+	display: block;
+	animation: fadein .5s ease;
+}
+
+
+.faq__item {
+	padding-top: 1.7rem;
+	padding-bottom: 1.7rem;
+	cursor: pointer;
+	border-bottom: 1px solid var(--color-light-gray);
+}
+
+.faq__question-container {
+	display: flex;
+	align-items: center;
+}
+
+.faq__question {
+	font-size: 1.3rem;
+	font-weight: 400;
+	color: var(--color-dark-gray);
+	position: relative;
+	padding-right: 1.5rem;
+	margin-right: auto;
+	transition: color .3s ease;
+}
+
+
 
 .mycolor{
   color:#83888F
@@ -141,8 +196,8 @@ footer{
 }
 
 .card{
-  /* height: 370px; */
-  /* width: 100vw; */
+  height: 430px;
+  width: 100vw;
   max-width:450px ;
   background: #0E8684;
   text-align: center;
@@ -421,47 +476,6 @@ footer{
 }
 
 
-/* SCALERS  */
-@media screen and (max-width: 1280px) {
-  .hero-texts{
-    text-align: center;
-  }
-  .hero-texts h1{
-    font-size:40px;
-    line-height: 40px;
-    font-weight: 400;
-    text-align: center;
-    
-  }
-  
-  .hero-texts p{
-    font-size: 16px;
-    text-align: center;
-  }
-  .collections h1{
-    font-size: 24px;
-    text-align: left;
-  }
-  
-  .collections p{
-    font-size: 15px;
-    text-align: left;
-    padding: 0 0px;
-  }
-  .collections img{
-    width: 250px;
-  }
-  .card{
-    /* height: 370px; */
-    /* width: 100vw; */
-    max-width:100% ;
-    /* background: #0E8684;
-    text-align: center;
-    padding: 20px 8px 6px 8px;
-    /* border-radius: 10px;* */
-    margin-bottom: 0px;
-  }
-}
 
 .rotate{
   transform:rotate(180deg);
@@ -554,10 +568,59 @@ footer{
 
 
 
+/* SCALERS  */
+@media screen and (max-width: 1280px) {
+  .hero-texts{
+    text-align: center;
+  }
+  .hero-texts h1{
+    font-size:40px;
+    line-height: 40px;
+    font-weight: 400;
+    text-align: center;
+    
+  }
+  
+  .hero-texts p{
+    font-size: 16px;
+    text-align: center;
+  }
+  .collections h1{
+    font-size: 24px;
+    text-align: left;
+  }
+  
+  .collections p{
+    font-size: 15px;
+    text-align: left;
+    padding: 0 0px;
+  }
+  .collections img{
+    width: 250px;
+  }
+  .card{
+    max-width:100% ;
+    margin-bottom: 0px;
+    text-align: left;
+  }
+  .card div{
+    padding-left: 20px;
+  }
+  .card p{
+    padding: 0;
+  }
+}
 
 
 
 
+@media screen and (max-width: 1280px) {
+  .card{
+    height: auto;
+    width: auto;
+    max-width:auto ;
+  }
+}
 @media screen and (max-width: 1024px) {
   .commitment h1{
     font-size: 35px;
@@ -579,6 +642,10 @@ footer{
   }
   .card-container{
     padding:0rem;
+  }
+
+  .dipper{
+   padding-bottom: 2rem;
   }
 
 }
@@ -702,6 +769,14 @@ footer{
   }
   .how-options h2{
     padding-bottom: -10px;
+  }
+  .card{
+    text-align: center;
+  }
+  .card img{
+    width: 5rem;
+    margin: auto;
+    padding-top: 3rem;
   }
 }
 

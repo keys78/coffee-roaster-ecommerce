@@ -71,7 +71,6 @@ const Home = () => {
             </section>
 
             <section>
-                <div>
                     <div className="why-us md:w-10/12 w-11/12 mx-auto rounded-2xl">
                         <div className="xl:w-4/12 lg:w-6/12 w-11/12 mx-auto text-center">
                             <h1>Why choose us?</h1>
@@ -81,28 +80,28 @@ const Home = () => {
                             </p>
                         </div>
 
-                        <div className="flex xl:w-flex-row flex-col items-center gap-10 w-9/12 mx-auto">
-                            <div className="card xl:block flex">
-                                <img className="mx-auto py-8" src="./assets/home/desktop/icon-coffee-bean.svg" alt="coffee bean" />
-                                <div className="py-8">
+                        <div className="dipper flex xl:flex-row flex-col gap-10 w-11/12 mx-auto">
+                            <div className="card xl:block flex sm:flex-row flex-col">
+                                <img className="xl:mx-auto xl:pl-0 pl-0 sm:py-8 py-0 " src="./assets/home/desktop/icon-coffee-bean.svg" alt="coffee bean" />
+                                <div className="xl:py-8 py-2">
                                     <h1>Best quality</h1>
                                     <p>Discover an endless variety of the world’s best
                                         artisan coffee from each of our roasters.
                                     </p>
                                 </div>
                             </div>
-                            <div className="card xl:block flex">
-                                <img className="mx-auto py-8" src="./assets/home/desktop/icon-gift.svg" alt="coffee bean" />
-                                <div className="py-8">
+                            <div className="card xl:block flex sm:flex-row flex-col">
+                                <img className="xl:mx-auto xl:pl-0 pl-6 sm:py-8 py-0" src="./assets/home/desktop/icon-gift.svg" alt="coffee bean" />
+                                <div className="xl:py-8 py-2">
                                     <h1>Exclusive benefits</h1>
                                     <p>Special offers and swag when you subscribe,
                                         including 30% off your first shipment.
                                     </p>
                                 </div>
                             </div>
-                            <div className="card xl:block flex">
-                                <img className="mx-auto p-8 " src="./assets/home/desktop/icon-truck.svg" alt="coffee bean" />
-                                <div className="py-8 mt-5">
+                            <div className="card xl:block flex sm:flex-row flex-col">
+                                <img className="xl:mx-auto xl:pl-0 pl-6 sm:p-8 p-0" src="./assets/home/desktop/icon-truck.svg" alt="coffee bean" />
+                                <div className="xl:py-8 py-2 xl:mt-5 mt-0">
                                     <h1>Free Shipping</h1>
                                     <p>We cover the cost and coffee is delivered fast.
                                         Peak freshness: guaranteed.
@@ -112,11 +111,10 @@ const Home = () => {
                         </div>
 
                     </div>
-                </div>
             </section>
 
             <section>
-                <div className="how md:w-10/12 w-11/12 mx-auto sm:mb-60 mb-28 sm:mt-96 mt-24">
+                <div className="how md:w-10/12 w-11/12 mx-auto sm:mb-60 mb-28 xl:mt-96 mt-24">
                     <h1 className="md:text-left text-center md:mb-0 mb-12">How it works</h1>
 
                     <div className="md:flex hidden relative my-12 circles w-9/12 flex justify-between items-center">

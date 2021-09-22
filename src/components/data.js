@@ -45,12 +45,14 @@ export const data = [
     {
         category:'quantity',
         name:'500g',
+        price:24.0,
         desc:'Perfect option for a couple. Yields about 40 delectable cups.'
 
     },
     {
         category:'quantity',
         name:'1000g',
+        price:50.0,
         desc:'Perfect for offices and events. Yields about 90 delightful cups.'
 
     },

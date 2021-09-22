@@ -2,6 +2,7 @@
 import Footer from "./components/Footer"
 import Header from "./components/Header"
 import MyOrder from "./components/MyOrder"
+import Orderie from "./components/MyOrderie"
 
 
 const CreateYourPlan = () => {
@@ -16,7 +17,7 @@ const CreateYourPlan = () => {
                         <source media="(min-width:440px)" className="rounded-2xl home-hero" srcset="./assets/plan/tablet/image-hero-blackcup.jpg" />
                         <img className="rounded-2xl plan-img" src="./assets/plan/mobile/image-hero-blackcup.jpg" alt="hero" />
                     </picture>
-                    
+
                     <div className="absolute top-0 left-0 w-full">
                         <div className="xl:w-10/12 w-11/12 mx-auto mt-32">
                             <div className="xl:w-6/12 lg:w-9/12 w-full hero-texts">
@@ -46,9 +47,10 @@ const CreateYourPlan = () => {
                             </div>
 
                             <div className="flex lg:flex-row flex-col justify-between items items-start">
-                                <div className="plan-options ">
+                                <div className="plan-options">
                                     <h1>01</h1>
-                                    <h2>Pick your <br /> coffee</h2>
+                                    <h2 className="lg:block hidden">Pick your <br /> coffee</h2>
+                                    <h2 className="lg:hidden block">Pick your coffee</h2>
                                     <p className="md:pr-16 pr-0">Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them.
                                         There are new coffees in all profiles every month for you to try out.
                                     </p>
@@ -77,6 +79,7 @@ const CreateYourPlan = () => {
 
             <div className="my-28 md:w-10/12 w-11/12 mx-auto">
                 <MyOrder />
+                {/* <Orderie /> */}
             </div>
 
 
