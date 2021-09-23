@@ -25,19 +25,14 @@ const MyOrder = () => {
     const handleClickType = value => {
         setBeanType(value)
     }
-    const handleClickQuantity = (value) => {
-        setQuantity(value)
 
-        {
-            if(
-                data.map((quantity) => (
-                quantity.category === 'quantity' && quantity.name === 'Filter' &&
-                quantity.category === 'deliveries' && quantity.name === 'Every week')
-                )) {
-                    setPrice(7.2)
-                }
-        }
+    const handleClickQuantity = (quantity) => {
+        setQuantity(quantity.name)
+        setPrice(quantity.price)
+
     }
+
+    
     const handleClickGrind = value => {
         setGrindOption(value)
     }
@@ -128,6 +123,7 @@ const MyOrder = () => {
                         {isOpen && <div className="card-holder">
                             {data.map((quantity) => (
                                 (quantity.category === 'quantity' &&
+                                    
                                     <motion.div
                                         initial={{ y: 300, opacity: 0 }}
                                         animate={{ y: 0, opacity: 1 }}
@@ -135,9 +131,8 @@ const MyOrder = () => {
                                         whileHover={{ scale: 0.97 }}
                                         transiton={{ type: 'spring', duration: 0.2 }}
                                         key={quantity.name} className="order-card"
-                                        onClick={() => handleClickQuantity(quantity.name) }>
+                                        onClick={() => handleClickQuantity(quantity)}>
                                         <h2>{quantity.name}</h2>
-                                        <p>{quantity.price}</p>
                                         <p>{quantity.desc}</p>
                                     </motion.div>
 
