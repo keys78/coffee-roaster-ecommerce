@@ -1,11 +1,20 @@
 import React from 'react'
 import Button from './Button'
 
-const SummaryModal = ({ price, preference, beanType, quantity, grind_option, deliveries, openModal, setOpenModal }) => {
+const SummaryModal = ({ price, setPrice, preference, setPreference, beanType, setBeanType, quantity, setQuantity,
+    grind_option, setGrindOption, deliveries, setDeliveries, openModal, setOpenModal
+}) => {
+
+
     function closeModal() {
         setOpenModal(!openModal)
+        setPrice('______');
+        setPreference('______');
+        setBeanType('______');
+        setQuantity('______');
+        setGrindOption('______');
+        setDeliveries('______')
     }
-
 
     return (
         <section className="mode fixed top-0 left-0 h-screen w-full">
@@ -27,12 +36,12 @@ const SummaryModal = ({ price, preference, beanType, quantity, grind_option, del
                         </h2>
                         <div className="flex justify-between items-center">
                             <h1 className="modal sm:block hidden">
-                                ${price}/per mo
+                                ${price.toFixed(2)}/per mo
                             </h1>
 
                             <button className="order-btn sm:mx-0 mx-auto sm:block flex gap-3" onClick={closeModal}>
                                 <h6>Checkout</h6>
-                                <h6 className="sm:hidden block">${price}/per mo</h6>
+                                <h6 className="sm:hidden block">${price.toFixed(2)}/per mo</h6>
                             </button>
                         </div>
                     </div>

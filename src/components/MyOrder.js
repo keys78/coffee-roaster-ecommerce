@@ -10,12 +10,14 @@ const MyOrder = () => {
     const [grind_option, setGrindOption] = useState('______')
     const [deliveries, setDeliveries] = useState('______')
 
-    const [price, setPrice] = useState(0)
+    const [price, setPrice] = useState(null)
 
     const [isOpen, setIsOpen] = useState(false)
     const [rotate, setRotate] = useState(false)
     const [openModal, setOpenModal] = useState()
     const [activeCard, SetActiveCard] = useState(false)
+
+
 
     const handleClick = value => {
         setPreference(value)
@@ -32,7 +34,21 @@ const MyOrder = () => {
 
     }
 
-    
+    function totalPrice() {
+        let x = price;
+        let y = deliveries;
+        if (x === 7.2 && y === 'Every week') { setPrice(price * 4) }
+        if (x === 7.2 && y === 'Every 2 weeks') { setPrice(19.2) }
+        if (x === 7.2 && y === 'Every month') { setPrice(12) }
+        if (x === 13.0 && y === 'Every week') { setPrice(price * 4) }
+        if (x === 13.0 && y === 'Every 2 weeks') { setPrice(17.5 * 2) }
+        if (x === 13.0 && y === 'Every month') { setPrice(22) }
+        if (x === 22.0 && y === 'Every week') { setPrice(price * 4) }
+        if (x === 22.0 && y === 'Every 2 weeks') { setPrice(32 * 2) }
+        if (x === 22.0 && y === 'Every month') { setPrice(42) }
+    }
+
+
     const handleClickGrind = value => {
         setGrindOption(value)
     }
@@ -50,7 +66,9 @@ const MyOrder = () => {
     }
 
     const createOrder = () => {
+        totalPrice();
         setOpenModal(!openModal)
+
     }
 
     return (
@@ -123,7 +141,7 @@ const MyOrder = () => {
                         {isOpen && <div className="card-holder">
                             {data.map((quantity) => (
                                 (quantity.category === 'quantity' &&
-                                    
+
                                     <motion.div
                                         initial={{ y: 300, opacity: 0 }}
                                         animate={{ y: 0, opacity: 1 }}
@@ -207,8 +225,13 @@ const MyOrder = () => {
                 </div>
 
             </div>
-            {openModal && <SummaryModal price={price} preference={preference} beanType={beanType}
-                quantity={quantity} grind_option={grind_option} deliveries={deliveries} openModal={openModal}
+            {openModal && <SummaryModal price={price} setPrice={setPrice}
+                preference={preference} setPreference={setPreference}
+                beanType={beanType} setBeanType={setBeanType}
+                quantity={quantity} setQuantity={setQuantity}
+                grind_option={grind_option} setGrindOption={setGrindOption}
+                deliveries={deliveries} setDeliveries={setDeliveries}
+                openModal={openModal}
                 setOpenModal={setOpenModal}
             />}
         </section>
