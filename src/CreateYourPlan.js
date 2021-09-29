@@ -3,6 +3,7 @@ import Footer from "./components/Footer"
 import Header from "./components/Header"
 import MyOrder from "./components/MyOrder"
 import Orderie from "./components/MyOrderie"
+import Test from "./components/test"
 
 
 const CreateYourPlan = () => {
@@ -79,7 +80,7 @@ const CreateYourPlan = () => {
 
             <div className="my-28 md:w-10/12 w-11/12 mx-auto">
                 <MyOrder />
-                {/* <Orderie /> */}
+                {/* <Test /> */}
             </div>
 
 

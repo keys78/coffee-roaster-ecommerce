@@ -3,43 +3,15 @@
 @tailwind utilities; */
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-.faq__question:hover {
-	color: orange;
-}
-
-.faq__arrow {
-	transition: .4s transform;
-}
-
-.faq__answer {
-	font-size: 1.2rem;
-	line-height: 1.8rem;
+/* .answer {
 	display: none;
-	margin-top: 1.5rem;
-	color: gray;
 }
 
-.faq__item.active .faq__question {
-	font-weight: 700;
-	color: blue;
-}
-
-.faq__item.active .faq__arrow {
-	transform: rotate(180deg);
-}
-
-.faq__item.active .faq__answer {
-	display: block;
-	animation: fadein .5s ease;
-}
-
-
-.faq__item {
+.my__item {
 	padding-top: 1.7rem;
 	padding-bottom: 1.7rem;
 	cursor: pointer;
-	border-bottom: 1px solid var(--color-light-gray);
+	border-bottom: 1px solid black;
 }
 
 .faq__question-container {
@@ -55,7 +27,52 @@
 	padding-right: 1.5rem;
 	margin-right: auto;
 	transition: color .3s ease;
+} */
+
+
+/* .my__item.active .faq__question {
+	font-weight: var(--weight-bold);
+	color: var(--color-dark-blue);
 }
+
+.faq__item.active .faq__arrow {
+	transform: rotate(180deg);
+} */
+
+/* .my__item.active .answer {
+	display: block;
+	animation: fadein .5s ease;
+}  */
+
+
+.answer{
+  display: none;
+}
+
+.clicker{
+  cursor: pointer;
+  /* border: 1px solid black; */
+
+}
+
+.clicker.active .answer{
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -123,6 +140,21 @@ footer{
 
 .global-btn:hover{
   background: #1bcecb;
+  transition: background linear 0.3s;
+  cursor: pointer;
+}
+
+.disabled-global-btn {
+  cursor: not-allowed;
+  opacity: 0.4;
+  background: #0E8684;
+  color:#FEFCF7;
+  font-family: 'Fraunces', serif;
+  padding:20px 40px;
+  text-align: center;
+  border-radius: 11px;
+  font-size: 21px;
+  font-weight: 600;
   transition: background linear 0.3s;
 }
 
@@ -431,6 +463,7 @@ footer{
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
   margin-bottom: 3rem;
+  /* display: none; */
 }
 
 /* ACTIVE BACKGROUND */
