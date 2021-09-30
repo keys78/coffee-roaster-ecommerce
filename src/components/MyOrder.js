@@ -88,7 +88,7 @@ const MyOrder = () => {
     }
 
     function checkForm() {
-        if(preference && beanType && quantity && grind_option && deliveries=== '______' ) {
+        if(preference && beanType && quantity && grind_option && deliveries === '______' ) {
             return true;
         } else {
             return false;
